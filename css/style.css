@@ -24,3 +24,20 @@ body {
     --textColour: var(--lightGrey);
 
 }
+
+/* Least to most */
+/* h1 div  */
+/* class attribute */
+/* id  not good performance */
+/* !important should not be used in your own CSS code */
+
+
+
+
+.header {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 0.5rem;
+}
