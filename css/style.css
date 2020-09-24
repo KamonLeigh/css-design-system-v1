@@ -31,7 +31,11 @@
      /* Styles */
      --line: solid 1px var(--lineColour);
 
+    /* Elevation*/
 
+    --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+    --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
 }
 
 body {
@@ -99,6 +103,7 @@ blockquote {
     margin: 0;
     padding: 2em;
     background: white;
+    box-shadow: var(--level-3);
 }
 
 label {
@@ -140,11 +145,12 @@ button {
   border: none;
   border-radius: 10px;
   padding: 5px 15px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--level-1);
+  transition: 0.3s ease-in-out box-shadow;
 }
 
 button:hover {
-
+  box-shadow: var(--level-2);
 }
 
 button:disabled {
