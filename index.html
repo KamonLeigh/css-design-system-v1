@@ -24,7 +24,7 @@
 </head>
 
 <body class="">
-
+<main class="layout">
   <!-- Add your site or application content here -->
   <h1 class="header">Hello World</h1>
   <p>Hello world! This is HTML5 Boilerplate.</p>
@@ -43,17 +43,24 @@
   <blockquote>
     Lorem Ipsum is simply <a href="#">dummy</a> text of the printing and <strong>typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
   </blockquote>
-  <hr/>
+  <div class="grid">
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and <a href="#">typesetting</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
   <ul>
     <li>Hi</li>
     <li>Hello</li>
     <li>It's me</li>
   </ul>
+  </div>
+  <hr/>
 
   <form>
-    <div><label for="text">Text</label><input id="text"type="text"  placeholder="Byron Dunkley" ></div>
-    <div><label for="number">Number</label><input id="number"type="number"></div>
+    <div class="flex flex-around ">
+      <div><label for="text">Text</label><input id="text"type="text"  placeholder="Byron Dunkley" ></div>
+      <div><label for="number">Number</label><input id="number"type="number"></div>
     <div><label for="email">Email</label><input id="email"type="email"></div>
+    </div>
     <div><label for="textarea">Textarea</label><textarea id="textarea">Default Area</textarea></div>
 
 
@@ -79,6 +86,7 @@
   </div>
 
   </form>
+</main>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
