@@ -92,6 +92,23 @@ header nav a + a {
   margin-left: 10px;
 }
 
+footer {
+  --footerTextColour: var(--lightGrey);
+  color: var(--footerTextColour);
+  background: var(--black);
+  color: white;
+  padding: 2rem var(--containerPadding);
+  text-align: center;
+}
+
+footer a {
+  color: var(--footerTextColour);
+}
+
+footer p {
+  margin-bottom: 0;
+  max-width: none;
+}
 .dark {
     --background: var(--black);
     --textColour: var(--lightGrey);
