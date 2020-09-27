@@ -21,6 +21,7 @@
     /* Type */
     --headingFont: 'Space Mono', monospace;
     --bodyFont: 'Work Sans', sans-serif;
+    --baseFontSize: 112.5%;
     --h1: 3.052em;
     --h2: 2.441em;
     --h3: 1.953em;
@@ -36,11 +37,19 @@
     --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
     --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+    
+    --med: 400px;
 }
 
 body {
     background: var(--background);
     color:var(--textColour);
+    background-color: white;
+    font-family: var(--bodyFont);
+    font-weight: 400;
+    line-height: 1.65;
+    color: #333;
+    padding-block-end: 100px;
 }
 
 .dark {
@@ -49,20 +58,11 @@ body {
 
 }
 
-
 /* FROM Typescale */
 
 
-html {font-size: 112.5%;} /*18px*/
+html {font-size: var(--baseFontSize);} /*18px*/
 
-body {
-  background-color: white;
-  font-family: var(--bodyFont);
-  font-weight: 400;
-  line-height: 1.65;
-  color: #333;
-  padding-block-end: 100px;
-}
 
 p {
     margin-bottom: 1.15rem;
@@ -177,7 +177,7 @@ button.small {
 
 .grid {
   --gridCols:2;
-  display: grid;
+  display: block;
   grid-template-columns: repeat(var(--gridCols), 1fr);
 }
 
@@ -191,10 +191,24 @@ button.small {
 
 .flex {
   --justifyContent: space-between;
-  display: flex;
+  display: block;
   justify-content: var(--justifyContent);
 }
 
 .flex-around {
   --justifyContent: space-around;
+}
+
+@media only screen and (min-width: 700px) {
+  :root {
+    --baseFontSize:100%;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  .flex {
+    display: flex;
+  }
 }
