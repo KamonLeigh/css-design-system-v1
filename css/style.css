@@ -241,12 +241,23 @@ button.small {
   grid-template-columns: repeat(var(--gridCols), 1fr);
 }
 
+.grid__split {
+  grid-template-columns: 33% 67%;
+  grid-gap: 20px;
+}
+
 .cols-3 {
   --gridCols: 3;
 }
 
 .cols-4 {
   --gridCols: 4;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  grid-gap: 20px;
 }
 
 .flex {
@@ -290,6 +301,6 @@ button.small {
   margin-top: 0;
 }
 
-/*  .card > *:last-child {
+  .card > *:last-child {
   margin-bottom: 0;
 }
