@@ -312,6 +312,15 @@ button.small {
   --buttonTextColour: var(--black);
 }
 
+.oled {
+  --black: #000;
+  --cardBg: var(--darkGrey);
+  --background: var(--black);
+  --headerBackground:var(--darkGrey);
+  --footerBackground: var(--darkGrey);
+  --buttonTextColour: var(--black);
+}
+
 .theme {
    /*Define colours as colours*/
    --black: #181818;
