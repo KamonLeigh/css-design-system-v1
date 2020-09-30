@@ -8,6 +8,7 @@
     --yellow: #fde24f;
     --darkBlue: #00214d;
     --grey: #bfbfbf;
+    --darkGrey: #222;
     --lightGrey:#f2f4fb;
     --white:#fff;
 
@@ -16,8 +17,11 @@
     --danger: var(--red);
     --background: var(--lightGrey);
     --textColour: var(--black);
+    --buttonTextColour: var(--black);
     --lineColour: var(--grey);
     --cardBg: var(--white);
+    --headerBackground: var(--darkBlue);
+    --footerBackground: var(--black);
 
 
     /* Type */
@@ -65,12 +69,10 @@ body {
     font-family: var(--bodyFont);
     font-weight: 400;
     line-height: 1.65;
-    color: #333;
     padding-block-end: 100px;
 }
 
 header {
-  --headerBackground: var(--darkBlue);
   color: white;
   position: fixed;
   left: 0;
@@ -97,7 +99,7 @@ header nav a + a {
 footer {
   --footerTextColour: var(--lightGrey);
   color: var(--footerTextColour);
-  background: var(--black);
+  background: var(--footerBackground);
   color: white;
   padding: 2rem var(--containerPadding);
   text-align: center;
@@ -110,11 +112,6 @@ footer a {
 footer p {
   margin-bottom: 0;
   max-width: none;
-}
-.dark {
-    --background: var(--black);
-    --textColour: var(--lightGrey);
-
 }
 
 /* FROM Typescale */
@@ -129,7 +126,7 @@ p {
 }
 
 p a, blockquote a {
-    color: var(--black);
+    color: var(--textColour);
     text-decoration: none;
     border-bottom: 2px solid var(--primary);
 }
@@ -198,7 +195,7 @@ button {
   --buttonColour:var(--primary);
 
   appearance: none;
-  color: var(--textColour);
+  color: var(--buttonTextColour);
   background-color: var(--buttonColour);
   border: none;
   border-radius: 10px;
@@ -303,4 +300,13 @@ button.small {
 
   .card > *:last-child {
   margin-bottom: 0;
+}
+
+.dark {
+  --cardBg: var(--darkGrey);
+  --background: var(--black);
+  --textColour: var(--lightGrey);
+  --headerBackground:var(--darkGrey);
+  --footerBackground: var(--darkGrey);
+  --buttonTextColour: var(--black);
 }
